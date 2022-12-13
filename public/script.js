@@ -24,6 +24,7 @@ navigator.mediaDevices.getUserMedia({
   })
 
   socket.on('user-connected', userId => {
+    console.log("user joined");
     connectToNewUser(userId, stream)
   })
   // input value
@@ -46,6 +47,7 @@ socket.on('user-disconnected', userId => {
 })
 
 myPeer.on('open', id => {
+  console.log("room created");
   socket.emit('join-room', ROOM_ID, id)
 })
 
