@@ -15,12 +15,11 @@
 
 .main__videos {
     flex-grow: 1;
-    /* background-color: #c2b49f; */
     background-image: url("https://img.freepik.com/free-photo/oak-wooden-textured-design-background_53876-143033.jpg?w=360");
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 40px;
+    padding: 10px;
 }
 
 .main__controls {
